@@ -7,9 +7,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://amihub.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: amihub
-github_username:  jekyll
+instagram_username:  amihubs
 
-permalink: /:categories/:title
+permalink: /:categories/:title/
 # Build settings
 markdown: kramdown
 theme: minima
