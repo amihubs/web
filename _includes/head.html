@@ -2,17 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "en-US" }}" prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	{% include seo.html %}
-	<link rel="dns-prefetch" href="https://cdn.amihub.com/">
-	<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
-	<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
-	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-	<link rel="stylesheet" href="{{ site.cdn }}css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ site.cdn }}css/font-awesome.min.css">
-	<link rel="stylesheet" href="{{ site.cdn }}css/web.css">
-	<link rel="stylesheet" href="{{ site.cdn }}css/style.css">
+	<link rel="dns-prefetch" href="https://{{ site.cdn }}/">
+	<link rel="stylesheet" href="//{{ site.cdn }}/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
