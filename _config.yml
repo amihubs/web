@@ -14,6 +14,7 @@ github_username:  jekyll
 timezone: Asia/Jakarta
 permalink: /:categories/:title/
 markdown: kramdown
+minify_html: true
 gems:
   - jekyll-feed
 exclude:
