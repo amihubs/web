@@ -12,7 +12,7 @@ layout: default
 				<div class="cat-box-content clearfix container cat-border">
 					<div class="row">
 						<div class="col-6 my-2">
-							{% for category in site.categories.jekyll %}
+							{% for category in site.categories.data %}
 							{% for posts in category %}
 							{% for post in posts limit:1 %}
 							<div class="card border-0 rounded-0">
