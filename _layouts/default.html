@@ -1,10 +1,12 @@
 {% include head.html %}
 <body>
-<div class="container">
-    {% include header.html %}
-    <div class="content-wrapper">
+	<div class="container boxed-all p-0">
+    {% include navbar.html %}
+	<div class="content-wrapper">
         {{ content }}
-    </div>
-{% include footer.html %}
+	</div>
+	{% include footer.html %}
+	</div>
+	{% include customjs.html %}
 </body>
 </html>

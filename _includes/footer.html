@@ -1,11 +1,19 @@
-  <footer class="main-footer">
-	About
-    <div class="pull-right text-xs-center">
-      Copyright &copy; {{ 'now' | date: "%Y" }} <a href="{{ site.url }}">{{ site.name }}</a>. All rights reserved.
-    </div>
-  </footer>
-</div>
-
-<script async src="//{{ site.cdn }}/js/jquery.js"></script>
-<script async src="//{{ site.cdn }}/js/popper.min.js"></script>
-<script async src="//{{ site.cdn }}/js/bootstrap.min.js"></script>
+<footer class="main-footer">
+	<div class="footer-widget container">
+		<div class="row">
+			<div class="col-sm">
+			One of three columns
+			</div>
+			<div class="col-sm">
+			One of three columns
+			</div>
+			<div class="col-sm">
+			One of three columns
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom clearfix">
+		<div class="float-right"><a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Use</a></div>
+		<div class="float-left">Copyright &copy; 2017 <a href="https://amihub.com">Amihub</a>. All rights reserved.</div>
+	</div>
+</footer>
