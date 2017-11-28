@@ -15,17 +15,10 @@
 		<div class="collapse navbar-collapse" id="navmenu">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-				{% assign categories_list = site.categories %}
-				{% if categories_list.first[0] == null %}
-				{% for category in categories_list %}
-				<li class="nav-item"><a class="nav-link" href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
+				{% assign categories = site.categories | sort %}
+				{% for category in categories %}
+				<li class="nav-item"><a class="nav-link" href="#{{ category }}">{{ category | capitalize }}</a></li>
 				{% endfor %}
-				{% else %}
-				{% for category in categories_list %}
-				<li><a href="#{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
-				{% endfor %}
-				{% endif %}
-				{% assign categories_list = nil %}
 			</ul>
 		</div>
 	</nav>			
