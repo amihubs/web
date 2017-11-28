@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Top Search Engine Optimization Strategies!"
 date:   2017-11-25 17:13:47 +0700
 categories: jekyll update
 ---
