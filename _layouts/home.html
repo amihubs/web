@@ -12,7 +12,9 @@ layout: default
 				<div class="cat-box-content clearfix container cat-border">
 					<div class="row">
 						<div class="col-6 my-2">
-							{% for post in site.posts limit:1 %}
+							{% for category in site.categories.jekyll %}
+							{% for posts in category %}
+							{% for post in posts limit:1 %}
 							<div class="card border-0 rounded-0">
 								<a href="{{ post.url }}" rel="bookmark">
 									<img class="card-img-top" src="https://themes.tielabs.com/sahifa/wp-content/uploads/sites/3/2015/01/7717834982_bbd7e12b8c_b-310x165.jpg" alt="Card image cap" width="310" height="165">
@@ -31,7 +33,7 @@ layout: default
 						<div class="col-6 my-2">
 							<div class="card border-0 rounded-0">
 								<ul class="list-group list-group-flush">
-									{% for post in site.posts offset:1 limit:1 %}
+									{% for post in posts offset:1 limit:1 %}
 									<li class="list-group-item p-0">
 										<div class="media pb-2">
 											<a href="{{ post.url }}" rel="bookmark">
@@ -46,7 +48,7 @@ layout: default
 										</div>
 									</li>
 									{% endfor %}
-									{% for post in site.posts offset:2 limit:3 %}
+									{% for post in posts offset:2 limit:3 %}
 									<li class="list-group-item p-0">
 										<div class="media py-2">
 											<a href="{{ post.url }}" rel="bookmark">
@@ -60,6 +62,8 @@ layout: default
 											</div>
 										</div>
 									</li>
+									{% endfor %}
+									{% endfor %}
 									{% endfor %}
 								</ul>
 							</div>
