@@ -1,23 +1,4 @@
-<noscript id="deferred-styles">
-    <link rel="stylesheet" href="{{site.cdn}}/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{site.cdn}}/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{site.cdn}}/css/style.css">
-	<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Sans%3Aregular%2C700">
-</noscript>
-<script>
-  var loadDeferredStyles = function() {
-	var addStylesNode = document.getElementById("deferred-styles");
-	var replacement = document.createElement("div");
-	replacement.innerHTML = addStylesNode.textContent;
-	document.body.appendChild(replacement)
-	addStylesNode.parentElement.removeChild(addStylesNode);
-  };
-  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	  webkitRequestAnimationFrame || msRequestAnimationFrame;
-  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-  else window.addEventListener('load', loadDeferredStyles);
-</script>
-<script async src="{{site.cdn}}/js/jquery-3.2.1.min.js"></script>
-<script async src="{{site.cdn}}/js/popper.min.js"></script>
-<script async src="{{site.cdn}}/js/bootstrap.min.js"></script>
-<script async src="{{site.cdn}}/js/app.js"></script>
+<script src="{{site.cdn}}/js/jquery-3.2.1.min.js"></script>
+<script src="{{site.cdn}}/js/popper.min.js"></script>
+<script src="{{site.cdn}}/js/bootstrap.min.js"></script>
+<script src="{{site.cdn}}/js/app.js"></script>
